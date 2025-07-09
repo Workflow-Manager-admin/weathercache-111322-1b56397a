@@ -93,6 +93,65 @@
   }
 }
 
+/* --- Weather SPA custom styles --- */
+
+.minimal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.weather-search-bar {
+  margin-top: 1.2rem;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-btn {
+  transition: opacity 0.18s, filter 0.18s;
+}
+.search-btn:active {
+  filter: brightness(0.95);
+}
+.search-btn:disabled {
+  opacity: 0.43;
+  cursor: not-allowed;
+}
+
+.main-weather-card {
+  max-width: 440px;
+  margin: 0 auto 2rem auto;
+}
+
+.sidebar {
+  min-width: 230px;
+  max-width: 350px;
+}
+
+.forecast-day {
+  font-size: 1rem;
+  background: #ffffffcc;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px #e0e0e0;
+  padding: 0.7rem 0.7rem;
+  margin-bottom: 0.7rem;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.airquality {
+  background: #cff4ff;
+  border-radius: 7px;
+  padding: 0.7rem 0.7rem;
+  font-size: 1rem;
+  color: #135b7a;
+}
+
 /* Responsive design for mobile */
 @media (max-width: 768px) {
   .theme-toggle {
